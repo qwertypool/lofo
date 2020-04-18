@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+
+
+    
+
+{% block b %}
+{% block b1 %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock b1 %}
+<div class="jumbotron" align="center">
+    <div class="container">
+        <h1>LOGIN PAGE</h1>
+    <form action="" method="POST" >
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" class="btn btn-primary" name="Login">
+    </form>
+</div>
+</div>
+<!--<div class="login-box">
+    <h1>Login</h1>
+    <form action="" method="POST" ></form>
+   {{form}}
+    {% csrf_token %}
+    <div class="textbox">
+        <i class="fa fa-user" aria-hidden="true"></i>
+        <input type="text" placeholder="Username" name="" value="">
+    </div>
+    <div class="textbox">
+        <i class="fa fa-lock" aria-hidden="true"></i>
+        <input type="password" placeholder="Password" name="" value="">
+    </div>
+    <input type="submit" class="btn" name="Login" value="Login">
+</div>-->
+{% endblock b %}
+    

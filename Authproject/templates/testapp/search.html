@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+{% block b %}
+<table border='2px'>
+<thead >
+    <th>Name</th>
+    <th>UID</th>
+</thead>
+{% for q in q3%}
+<tr>
+    <td>{{q.name}}</td>
+    <td>{{q.uid}}</td>
+</tr>
+{%endfor%}
+</table>
+{% endblock b %}

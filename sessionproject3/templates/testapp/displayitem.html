@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+
+{% block b %}
+<h2 align="center">DISPLAYING CART INFO:=</h2>   
+{% if request.session %}
+    <table border="2px">
+        <thead>
+            <th>NAME</th>
+            <th>QUANTITY</th>
+        </thead>
+        {%for key,value in request.session.items %}
+        <tr>
+            <td>{{key}}</td>
+            <td>{{value}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+        {%else%}
+        <p>NO ITEMS IN SHOPPING CART</p>
+    {%endif%}
+{% endblock b %}
+    

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+
+{% block b %}
+    <h1>EMPLOYEE INFORMATION DASHBOARD</h1><hr>
+    <table border="4px">
+        <thead>
+            <th>EID</th>
+            <th>ENAME</th>
+            <th>ESALARY</th>
+            <th>Eaddress</th>
+            <th>Action</th>
+        </thead>
+        {%for e in employees%}
+        <tr>
+            <td>{{e.enum}}</td>
+            <td>{{e.ename}}</td>
+            <td>{{e.esal}}</td>
+            <td>{{e.eaddr}}</td>
+            <td><a href="/home/update/{{e.id}}"> UPDATE </a>  <a href="/home/delete/{{e.id}}"> DELETE </a></td>
+        </tr>
+        {%endfor%}
+    </table><br><br>
+    <a href="/home/create" class="btn btn-danger btn-lg">INSERT EMPLOYEE</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/home/companycreate" class="btn btn-danger btn-lg">INSERT COMPANY</a>
+{% endblock b %}
+    

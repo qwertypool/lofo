@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+
+
+{% block b %}
+<h1 align="center">Card Registration Page</h1>
+    <div class="container">
+        <div class="jumbotron">
+            <form method="post">
+                {{form.as_p}}
+                {% csrf_token %}
+                <input type="submit" class="btn btn-success btn-large" value="Submit">
+            </form>
+        </div>
+    </div>
+{% endblock b %}
+    

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{%static "css/styles.css" %} ">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The employee details are:</h1>
+       {% if emp_list %}
+        <table border="3px">
+       <thead>
+           <th><h3>EmpID</h3></th>
+           <th><h3>EmpNAME</h3></th>
+           <th><h3>EmpSAL</h3></th>
+           <th><h3>EmpADDRESS</h3></th>
+       </thead>
+            {% for emp in emp_list %}
+            <tr>
+                <td>{{emp.empno}}</td>
+                <td>{{emp.empname}}</td>
+                <td>{{emp.empsal}}</td>
+                <td>{{emp.empaddr}}</td>
+            </tr>
+            {%endfor%}
+        </table>
+        {% endif %}
+         
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {%load custom%}
+    <table border="4px">
+        <thead>
+            <th>NAME</th>
+            <th>SUBJECT</th>
+            <th>DEPT</th>
+            <th>DATE</th>
+        </thead>
+    {% for f in filter%}
+    <tr>
+        <td>{{f.name|title}}</td>
+        <td>{{f.subject|upper}}</td>
+        <td>{{f.dept|truncate:4}}</td>
+        <td>{{f.date}}</td>
+    </tr>
+    {%endfor%}
+</table>
+</body>
+</html>

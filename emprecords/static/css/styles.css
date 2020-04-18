@@ -1,0 +1,46 @@
+body{
+background-image: url(https://images.unsplash.com/photo-1490365728022-deae76380607?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size:contain ;
+background-size: cover;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: inherit;
+    font-style: inherit;
+}
+thead{
+    font-size: large;
+    font: outline;
+    font-style: bold;
+    font-size: large;
+    color:black;
+}
+
+td{
+    font-weight: 600;
+    font-size: medium;
+    color: red;
+}
+
+table{
+    box-shadow: rgb(red, green, blue);
+    border: seagreen;
+    background-color: cyan;
+    text-align: center;
+    align-self: center;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    color: black;
+    border: forestgreen;
+    box-shadow: gold;
+    border-color: goldenrod;
+    border-style: double;
+    border-block-end-style: double ;
+    background-color: cyan;
+    border-width: thick;
+    border-radius: initial;
+}

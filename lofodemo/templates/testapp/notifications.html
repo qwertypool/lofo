@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+
+{% block b %}
+    <h1 align="center">WELCOME TO NOTIFICATIONS PAGE</h1>
+    <table border="2px">
+        <thead>
+            <th>UID</th>
+            <th>CARD</th>
+        </thead>
+        {% for q in q3%}
+        <tr>
+            <td>{{q.uid}}</td>
+            <td>{{q.card}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+{% endblock b %}
+    

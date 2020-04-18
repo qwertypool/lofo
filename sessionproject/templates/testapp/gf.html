@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+        h1{
+            color: crimson;
+            font-size: 80px;
+        }
+        .con{
+            font-size: 30px;
+            font-weight: bold;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1 align="center">GF REGISTRATION FORM:-</h1><hr><hr>
+    <div class="con">
+        <form action="/result/res" align="center">
+            {{gf.as_p}}
+            {% csrf_token %}
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
+    </div>
+</body>
+</html>

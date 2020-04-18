@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+{% extends 'blogapp/base.html' %}
+
+
+{% block title %}
+    {{post.title}}
+{% endblock title %}
+    
+
+{% block content %}
+<h1>DEEPA'S BLOGS:-</h1>
+<h1>asdadakfalfk</h1>
+    <h3>{{post.title}}</h3>
+    <p id='date'>PUBLISHED ON : {{post.publish}}     AUTHOR : {{post.author|title}}  </p>
+    <p id='au_date'>{{post.body}}</p><br><br><br>
+    <a href="/post/mail/{{post.id}}" align="center"><input type="button" class="btn btn-warning btn-large" value="SHARE BY EMAIL"></a><br><b><br></b>
+
+<div class="container">
+    <div class="jumbotron">
+        {%with comments.count as comment_count %}
+        <h4>{{comment_count}} Comment{{comment_count|pluralize}}</h4><hr>
+        {%endwith%}
+        
+        {% if comments %}
+        {%for comment in comments %}
+        <p id='comment'> <strong> {{comment.name}}</strong> on {{comment.created}}</p>
+        <div id="cbody">
+            <p>{{comment.body|linebreaks}}</p>
+        </div>
+        
+        {%endfor%}
+        {%endif%}
+        
+    </div>
+
+</div>
+
+{%if csubmit%}
+<p>________</p>
+{%else%}
+<form method='post'>
+    {{form.as_p}}
+    {% csrf_token %}
+    <input type="submit" class="btn btn-success btn-small" value="Comment">
+</form>
+{%endif%}
+{% endblock content %}
+    

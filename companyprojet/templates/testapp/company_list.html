@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+
+{% block b %}
+    <h1>THE COMPANY LSIT IS:</h1><hr>
+    {%for c in company_list%}
+    <h5><a href="/home/details/{{c.id}}">{{c.name}}</a></h5>
+    {%endfor%}
+    <p></p><br><br>
+    <a href="/home/form/" class="btn btn-primary btn-large">INSERT NEW COMPANY</a>
+{% endblock b %}
+

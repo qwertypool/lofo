@@ -1,0 +1,70 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+body{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+background: url(https://images.unsplash.com/photo-https://images.unsplash.com/photo-1515549832467-8783363e19b6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1782&q=80-d00b7eee80f1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80) no-repeat;
+background-size: cover;
+}
+
+.login-box{
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: black;
+ box-sizing: border-box;
+ border-radius: 3px solid black;
+}
+
+.login-box h1{
+    float: left;
+    font-size: 40px;
+    border-bottom: 6px solid #4caf50;
+    margin-bottom: 30px;
+    padding: 13px 0;
+}
+
+.textbox{
+    border: none;
+    outline: none;
+    background: none;
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #4caf50;
+}
+
+.textbox i{
+    width: 26px;
+    float: left;
+    text-align: center;
+}
+
+.textbox input[type=text],
+.textbox input[type=password]{
+    border: none;
+    outline: none;
+    background : none;
+    background-color:transparent;
+    color: black;
+    width: 80%;
+    font-size: 18px;
+    float: left;
+    margin: 0 10px;
+}
+
+.btn{
+    width: 100%;
+    background: none;
+    border: 2px solid #4caf50;
+    padding: 5px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    margin: 12px 0;
+}

@@ -1,0 +1,16 @@
+h1{
+    text-align: center;
+   border: black 2px double;
+    color: #245744;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.formsdiv{
+    text-align: center;
+    text-decoration: aqua;
+    color: #5e0e69;
+    
+}
+label[text]{
+    color: #5e0e69;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block homeactive %}active {% endblock homeactive %}
+{% block title %}
+Notifications
+{% endblock title %}
+
+
+{% block style %}
+<style>
+
+</style>
+{% endblock style %}
+
+
+{% block content %}
+<!-- <img src="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    alt=""> -->
+<div class="container my-2">
+    <h1 align="center">WELCOME TO NOTIFICATIONS PAGE</h1>
+    <table border="2px">
+        <thead>
+            <th>UID</th>
+            <th>CARD</th>
+            <th>NAME</th>
+        </thead>
+        {% for q in q3 %}
+        <tr>
+            <td>{{q.uid}}</td>
+            <td>{{q.card}}</td>
+        </tr>
+        {%endfor%}
+        {% for f in fname %}
+            <tr>
+                <td>{{f.name}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    
+</div>
+
+<!-- <table class="table table-hover table-dark">
+    <thead>
+      <tr>
+        <th scope="col">UID</th>
+        <th scope="col">Card Type</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>Mark</td>
+        <td>Otto</td>
+        <td>@mdo</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table> -->
+{% endblock content %}

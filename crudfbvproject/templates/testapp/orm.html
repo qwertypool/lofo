@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+
+{% block b %}
+    <h1>ORM QUERY</h1><hr>
+    <table border="4px">
+        <thead>
+            <th>EID</th>
+        </thead>
+        {%for q in q3%}
+        <tr>
+            <td>{{q.enum}}</td>
+        </tr>
+        {%endfor%}
+    </table><br><br>
+    <a href="/home/create" class="btn btn-danger btn-lg">INSERT EMPLOYEE</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/home/companycreate" class="btn btn-danger btn-lg">INSERT COMPANY</a>
+{% endblock b %}
+    

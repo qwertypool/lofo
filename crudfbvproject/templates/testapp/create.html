@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+
+{% block b %}
+    <h1>INSERT NEW RECORD</h1><hr>
+    <div class="jumbotron" align="center">
+    <div class="container" margin-top="20px">
+        <form  method="post">
+            {{form.as_p}}
+            {% csrf_token %}
+            <input type="submit" class="btn btn-primary" value="INSERT">
+        </form>
+    </div>
+    </div>
+{% endblock b %}

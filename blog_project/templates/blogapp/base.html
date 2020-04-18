@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+{% load blogapp_tags %}
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+    {% block title %}
+        
+    {% endblock title %}
+        </title>
+        <link rel="stylesheet" href="{% static 'css/post.css' %}">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        
+    </head>
+<body>
+    <div>
+
+        <div class="content">
+            
+            {% block content %}
+            
+            {% endblock content %} <br><br><br><br><br><br><br><br>
+            <a href="/post/home"><input type="button" class="btn btn-warning btn-large" value="Home Page"></a>
+        </div>
+        
+
+        <div class='sidebar'>
+            <h2>Deepa Blog's Updates</h2>
+            <h6>The total number of Posts today is : {% my_tag %}</h6>
+            <h3>Latest Posts</h3>{% show_posts %}
+            
+        </div>
+    </div>
+</body>
+</html>

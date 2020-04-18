@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+{% block b %}
+    <h1>BOOK INFORMATION BC in customised template</h1><hr>
+    {% for b in book_list %}
+    <ul>
+        <li>TITLE:{{b.title}}</li>
+        <li>AUTHOR:{{b.author}}</li>
+        <li>PAGES:{{b.page}}</li>
+        <li>PRICE:{{b.price}}</li>
+    </ul>
+    {%endfor%}
+{% endblock b %}

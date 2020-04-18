@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+
+{% block b %}
+    <h1>THE COMPANY DETAILS ARE:</h1><hr>   
+    <p>NAME:{{company.name}}</p>
+    <p>LOCATION:{{company.location}}</p>
+    <p>CEO:{{company.ceo}}</p>
+ <a href="/home/list" class="btn btn-primary" >List View</a>&nbsp; &nbsp;&nbsp; &nbsp;
+ <a href="/home/delete/{{company.id}}" class="btn btn-dark">DELETE</a>&nbsp; &nbsp;&nbsp; &nbsp;
+ <a href="/home/update/{{company.id}}" class="btn btn-warning">UPDATE</a>&nbsp; &nbsp;&nbsp; &nbsp;
+<a href="/home/form/" class="btn btn-success">INSERT</a>&nbsp; &nbsp;&nbsp; &nbsp;
+{% endblock b %}

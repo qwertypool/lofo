@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% extends 'blogapp/base.html' %}
+
+
+{% block title %}
+    Deepa's Blog
+{% endblock title %}
+    
+
+{% block content %}
+<h1>DEEPA'S BLOGS:-</h1><br><br>
+     {% if tag %}
+    <h3>Posts tagged with {{tag.name}}</h3>
+        {% endif %}
+    {%for post in post_list_view%}
+    <a href="{{post.get_absolute_url}}"><h3>{{post.title}}</h3></a>
+    <p id='date'>PUBLISHED ON : {{post.publish}}     AUTHOR : {{post.author|title}}  </p>
+    
+    <h6>Tags: 
+    {% for tag in post.tags.all %}
+        <!--<a href="% url 'post_list_by_tag_name' tag.slug%"><input type="button" class="btn btn-primary btn-small" value="{{tag.name}}" ></a>-->
+        <a href="/post/tag/{{tag.slug}}"><input type="button" class="btn btn-primary btn-small" value="{{tag.name}}" ></a>
+        {%endfor%}
+    </h6>
+    <!--<p>Tags : {{post.tags.all|join:', '}}</p> --> 
+    <p id='au_date'>{{post.body|truncatewords:30}}</p> <br><br><br>
+    {%endfor%}
+    {%include 'blogapp/pagination.html' with page=post_list_view %}
+{% endblock content %}
+    

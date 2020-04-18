@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>new Myself Form</h1>
+    <form method="post">
+        {{form.as_p}}
+        {% csrf_token %}
+        <input type="submit" class="btn btn-primary" value="Submit">
+    </form>
+    <a href="/home/list"><input type="button" value="VIEW"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="/home/elist"><input type="button" value="Enemy VIEW"></a><br><br>
+    <a href="/home/demo"><input type="button" Value="Demoform"></a>
+</body>
+</html>

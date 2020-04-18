@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+
+{% block b %}
+    <h1>INSERT NEW RECORD</h1><hr>
+    <div class="jumbotron" align="center">
+    <div class="container" margin-top="20px">
+        <form  method="post">
+            {% csrf_token %}
+            EMPLOYEE NO. :<input type="text" name="enum" value="{{employee.enum}}"><br>
+            EMPLOYEE NAME :<input type="text" name="ename" value="{{employee.ename}}"><br>
+            EMPLOYEE SALARY :<input type="text" name="esal" value="{{employee.esal}}"><br>
+           EMPLOYEE ADDRESS : <input type="text" name="eaddr" value="{{employee.eaddr}}"><br><br><br>
+            <input type="submit" class="btn btn-danger" name="" value="SUBMIT">
+        </form>
+    </div>
+    </div>
+{% endblock b %}

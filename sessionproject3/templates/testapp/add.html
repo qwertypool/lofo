@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{%extends 'testapp/base.html'%}
+    {%block b%}
+    <form action="/shop/a/" method='post' align="center">
+       {{ form.as_p}}
+       {% csrf_token %}
+       <input type="submit" class="btn btn-primary btn-large" value="Add Items">
+    </form><br>
+    <div align="center">
+      <a class="btn btn-primary" href="/display/d" role="button" >DISPLAY ITEMS</a>
+    </div>
+ {%endblock%}

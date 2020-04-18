@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="2px">
+        <thead>
+            <th>name</th>
+            <th>age</th>
+            <th>profession</th>
+  
+        </thead>
+            {%for f in elist%}
+            <tr>
+                <td>{{f.name}}</td>
+                <td>{{f.age}}</td>
+                <td>{{f.proffession}}</td>
+                
+            </tr>
+        {%endfor%}
+    </table>
+<a href="/home/form"><input type="button" value="Form"></a>&nbsp;&nbsp;&nbsp;<a href="/home/eform"><input type="button" value="Enemy Form"></a>
+
+</body>
+</html>

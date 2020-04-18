@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+
+{% block b %}
+    <h1>INSERT NEW COMPANY RECORD</h1><hr>
+    <div class="jumbotron" align="center">
+    <div class="container" margin-top="20px">
+        <form  method="post">
+            {% csrf_token %}
+            Company ID :<input type="text" name="cnum" value="{{company.cnum}}"><br>
+            Company NAME :<input type="text" name="cname" value="{{company.cname}}"><br>
+           Company ADDRESS : <input type="text" name="clocation" value="{{Company.clocation}}"><br><br><br>
+            <input type="submit" class="btn btn-danger" name="" value="SUBMIT">
+        </form>
+    </div>
+    </div>
+{% endblock b %}

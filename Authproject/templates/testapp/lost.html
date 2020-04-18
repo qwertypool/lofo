@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+{% block b %}
+<div class="jumbotron" align="center">
+    <div class="container">
+    <h1>LOST ITEMS LIST</h1>
+<div class="dropdown" >
+    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      LOST CARD ITEMS
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="/cards/adhar">AADHAR CARD</a>
+      <a class="dropdown-item" href="/cards/voter">VOTER ID CART</a>
+      <a class="dropdown-item" href="/cards/pan">PAN CARD</a>
+      <a class="dropdown-item" href="/cards/atm">ATM CARD</a>
+      <a class="dropdown-item" href="/cards/">DRIVING LISCENSE CARD</a>
+      <a class="dropdown-item" href="/cards/passport">PASSPORT</a>
+     </div>
+    </div>
+    </div>
+</div>
+{% endblock b %}
+    

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block aboutactive %}active {% endblock aboutactive %}
+{% block title %}
+    About
+{% endblock title %}
+    
+
+{% block style %}
+ <style>
+    .card-img-top {
+    width: 70%;
+    height: 40vw;
+    object-fit: cover;
+}
+</style>
+{% endblock style %} 
+    
+
+{% block content %}
+<div class="jumbotron jumbotron-fluid" style="background-color: rgba(39, 184, 162,0.2);">
+    <div class="container">
+      <h1 class="display-4"><svg class="bi bi-code-slash" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M4.854 4.146a.5.5 0 010 .708L1.707 8l3.147 3.146a.5.5 0 01-.708.708l-3.5-3.5a.5.5 0 010-.708l3.5-3.5a.5.5 0 01.708 0zm6.292 0a.5.5 0 000 .708L14.293 8l-3.147 3.146a.5.5 0 00.708.708l3.5-3.5a.5.5 0 000-.708l-3.5-3.5a.5.5 0 00-.708 0zm-.999-3.124a.5.5 0 01.33.625l-4 13a.5.5 0 01-.955-.294l4-13a.5.5 0 01.625-.33z" clip-rule="evenodd"/>
+      </svg>About us</h1>
+      <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+    </div>
+  </div>
+  <div class="container">
+  <h1><svg class="bi bi-people-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 100-6 3 3 0 000 6zm-5.784 6A2.238 2.238 0 015 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 005 9c-4 0-5 3-5 4s1 1 1 1h4.216zM4.5 8a2.5 2.5 0 100-5 2.5 2.5 0 000 5z" clip-rule="evenodd"/>
+  </svg> Our Team</h1>
+  
+  <div class="card-group">
+    <div class="card bg-transparent border-success">
+      <img src="https://scontent.fccu5-1.fna.fbcdn.net/v/t1.0-9/94146857_1490721877774521_5512802051555328000_n.jpg?_nc_cat=110&_nc_sid=85a577&_nc_ohc=xPuTILPJiCAAX9VllO7&_nc_ht=scontent.fccu5-1.fna&oh=c8ece9302b04eab78f037f57e1a86559&oe=5EBF50D7" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title text-success">Deepak Pandey</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small > <svg class="bi bi-envelope-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M.05 3.555L8 8.414l7.95-4.859A2 2 0 0014 2H2A2 2 0 00.05 3.555zM16 4.697l-5.875 3.59L16 11.743V4.697zm-.168 8.108L9.157 8.879 8 9.586l-1.157-.707-6.675 3.926A2 2 0 002 14h12a2 2 0 001.832-1.195zM0 11.743l5.875-3.456L0 4.697v7.046z"/>
+          </svg>&nbsp;deepak@gmail.com</small></p>
+      </div>
+    </div>
+    <div class="card bg-transparent border-success">
+      <img src="https://scontent.fccu5-1.fna.fbcdn.net/v/t1.15752-9/93838199_246937143358629_264492255115476992_n.jpg?_nc_cat=100&_nc_sid=b96e70&_nc_ohc=_o_yWYhWQZcAX_99b10&_nc_ht=scontent.fccu5-1.fna&oh=7bfc83b18b10305f838b3abfdc9e9956&oe=5EC0A673" class="card-img-top" alt="...">
+
+      <div class="card-body ">
+        <h5 class="card-title text-success">Deepa Pandey</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+        <p class="card-text"><small> <svg class="bi bi-envelope-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M.05 3.555L8 8.414l7.95-4.859A2 2 0 0014 2H2A2 2 0 00.05 3.555zM16 4.697l-5.875 3.59L16 11.743V4.697zm-.168 8.108L9.157 8.879 8 9.586l-1.157-.707-6.675 3.926A2 2 0 002 14h12a2 2 0 001.832-1.195zM0 11.743l5.875-3.456L0 4.697v7.046z"/>
+          </svg>&nbsp;deepa@gmail.com</small></p>
+      </div>
+    </div>
+    <div class="card bg-transparent border-success">
+      <img src="https://scontent.fccu5-1.fna.fbcdn.net/v/t1.0-9/p960x960/38430079_1218346054973405_920592726267789312_o.jpg?_nc_cat=111&_nc_sid=7aed08&_nc_ohc=70T8BThd-5QAX-QRQ8k&_nc_ht=scontent.fccu5-1.fna&_nc_tp=6&oh=9b8a60b6c5f27d8f87ad2123a302f0cd&oe=5EBE50D2" class="card-img-top" alt="...">
+      <div class="card-body ">
+        <h5 class="card-title text-success">Suvam Pandey</h5>
+        <p class="card-text ">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+        <p class="card-text"><small ><svg class="bi bi-envelope-fill" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path d="M.05 3.555L8 8.414l7.95-4.859A2 2 0 0014 2H2A2 2 0 00.05 3.555zM16 4.697l-5.875 3.59L16 11.743V4.697zm-.168 8.108L9.157 8.879 8 9.586l-1.157-.707-6.675 3.926A2 2 0 002 14h12a2 2 0 001.832-1.195zM0 11.743l5.875-3.456L0 4.697v7.046z"/>
+          </svg>&nbsp;suvam@gmail.com</small></p>
+      </div>
+    </div>
+  </div>
+</div><br><br><br><br><br>
+{% endblock content %}
+    
